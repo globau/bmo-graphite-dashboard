@@ -48,6 +48,9 @@ print <<EOF;
         </select>
     </div>
     <div id="content"></div>
+    <div id="source">
+        <a href="https://github.com/globau/bmo-graphite-dashboard/">source</a>
+    </div>
 </body>
 </html>
 EOF

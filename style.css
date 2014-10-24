@@ -47,6 +47,15 @@ img {
     clear: both;
 }
 
+#source {
+    position: absolute;
+    bottom: 5px;
+}
+
+#source a {
+    color: #eee;
+}
+
 .loading {
     opacity: 0.5;
 }
