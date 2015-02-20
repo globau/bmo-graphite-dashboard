@@ -75,7 +75,7 @@ function update_src() {
     var graph = graphs[i];
 
     // var base_src = 'https://graphite-scl3.mozilla.org/render?';
-    var base_src = 'http://drop.glob.com.au/graphite/render.cgi?';
+    var base_src = 'http://glob.uno/graphite/render.cgi?';
     for (var key in graph) {
       if (graph[key] instanceof Array) {
         for (var j = 0, jl = graph[key].length; j < jl; j++) {
