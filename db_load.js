@@ -48,17 +48,17 @@ var graphs = [
     areaMode: 'all'
   },
   {
-    title: 'bugzilla6.db 1 Min Load',
+    title: 'bugzilla7.db 1 Min Load',
     target: [
-      'hosts.bugzilla6_db_scl3_mozilla_com.load.load.shortterm'
+      'hosts.bugzilla7_db_scl3_mozilla_com.load.load.shortterm'
     ],
     colorList: 'cyan',
     areaMode: 'all'
   },
   {
-    title: 'bugzilla6.db 1 Min Load',
+    title: 'bugzilla8.db 1 Min Load',
     target: [
-      'hosts.bugzilla6_db_scl3_mozilla_com.load.load.shortterm'
+      'hosts.bugzilla8_db_scl3_mozilla_com.load.load.shortterm'
     ],
     colorList: 'grey',
     areaMode: 'all'
