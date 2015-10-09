@@ -8,16 +8,23 @@ use Digest::MD5 qw(md5_hex);
 use FindBin qw($Bin);
 use LWP::UserAgent;
 
+use constant USE_CACHE => 0;
+
 my $query_string = $ENV{QUERY_STRING} || '';
 $query_string =~ s/&_uniq=\d+//;
 my $prefix = DateTime->now->strftime('%Y%m%d%H%M');
 $prefix = $prefix - ($prefix % 2);
+my $url = "https://graphite-web.private.scl3.mozilla.com/render?$query_string&_uniq=" . time();
+
+if (!USE_CACHE) {
+    print "Location: $url\n\n";
+    exit;
+}
 
 my $file = "graphs/${prefix}_" . md5_hex($query_string) . '.png';
 
 if (!-e "$Bin/$file" || !-s "$Bin/$file") {
     $ENV{PERL_LWP_SSL_VERIFY_HOSTNAME} = 0;
-    my $url = "https://graphite-scl3.mozilla.org/render?$query_string&_uniq=" . (time);
     my $ua = LWP::UserAgent->new(agent => 'glob.uno/graphite cache');
     $ua->default_header('Referer' => 'http://glob.uno/graphite/');
     my $response = $ua->get($url);
