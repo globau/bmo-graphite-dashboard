@@ -28,8 +28,9 @@ var graphs = [
     ]
   },
   {
-    title: 'HTTP Connections',
-    target: 'hosts.web[1-9]_bugs_scl3_mozilla_com.apache.apache80.apache_connections.count'
+    title: 'HTTP In-Flight Requests',
+    target: 'hosts.web[1-9]_bugs_scl3_mozilla_com.apache.apache80.apache_scoreboard.sending.count',
+    expanded: 'webheads_in_flight'
   },
   {
     title: 'HTTPd Idle Workers',
