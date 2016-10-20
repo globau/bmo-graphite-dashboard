@@ -14,8 +14,8 @@ content-type: text/html
     <title>Dashboard: BMO</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link href="style.css" rel="stylesheet" type="text/css" >
-    <script src="$graphs.js?2" type="text/javascript"></script>
-    <script src="dashboard.js?2" type="text/javascript"></script>
+    <script src="$graphs.js?3" type="text/javascript"></script>
+    <script src="dashboard.js?4" type="text/javascript"></script>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 <body onload="init()">

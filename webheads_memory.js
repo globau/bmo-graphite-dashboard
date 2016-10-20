@@ -48,5 +48,15 @@ var graphs = [
     yUnitSystem: 'binary',
     colorList: 'brown',
     areaMode: 'all'
+  },
+  {
+    title: 'web6 Memory Usage',
+    target: [
+      'hosts.web6_bugs_scl3_mozilla_com.memory.memory.used.value'
+    ],
+    yMax: 17179869184,
+    yUnitSystem: 'binary',
+    colorList: 'orange',
+    areaMode: 'all'
   }
 ];

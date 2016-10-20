@@ -38,5 +38,13 @@ var graphs = [
     ],
     colorList: 'brown',
     areaMode: 'all'
+  },
+  {
+    title: 'web6 1 Min Load',
+    target: [
+      'hosts.web6_bugs_scl3_mozilla_com.load.load.shortterm'
+    ],
+    colorList: 'orange',
+    areaMode: 'all'
   }
 ];
